@@ -26,3 +26,4 @@ jobs:
         BOT_API: ${{ secrets.BOT_API }}
         CHAT_ID: ${{ secrets.CHAT_ID }}
       run: python HostlocGetPoints.py
+
