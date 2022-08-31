@@ -34,7 +34,7 @@
 
 ![image](https://user-images.githubusercontent.com/64535826/118830246-5eada700-b8f1-11eb-86b5-ca3c8547863f.png)
 
-左边的删除，然后写入
+左边的删除，然后写入 
 
     name: 'HostlocAutoGetPoints'
 
