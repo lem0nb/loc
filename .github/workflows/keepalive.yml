@@ -1,0 +1,14 @@
+name: KeepAlive
+on:
+  watch:
+    types: started
+  schedule:
+    - cron: "0 0 * * *"
+
+jobs:
+  keepalive:
+    name: KeepAlive
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - uses: gautamkrishnar/keepalive-workflow@v1
