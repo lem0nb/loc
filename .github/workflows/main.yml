@@ -12,6 +12,11 @@ jobs:
     steps:
     - name: 'Checkout codes'
       uses: actions/checkout@v2
+    - name: Delete workflow runs
+      uses: Mattraks/delete-workflow-runs@v2.0.3
+      with:
+        retain_days: 3
+        keep_minimum_runs: 0
     - name: 'Set python'
       uses: actions/setup-python@v1
       with:
