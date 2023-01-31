@@ -1,4 +1,4 @@
-name: 'HostlocAutoGetPoints'
+name: 'Build'
 on:
   push:
     branches: 
@@ -7,7 +7,7 @@ on:
     - cron: '0 16 * * *'
 
 jobs:
-  get_points:
+  test:
     runs-on: ubuntu-latest
     steps:
     - name: 'Checkout codes'
@@ -25,4 +25,5 @@ jobs:
         BOT_API: ${{ secrets.BOT_API }}
         CHAT_ID: ${{ secrets.CHAT_ID }}
       run: python HostlocGetPoints.py
+    - uses: gautamkrishnar/keepalive-workflow@v1
 
